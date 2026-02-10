@@ -1,129 +1,103 @@
-# 📧 Spam Email Classifier (Machine Learning Project)
+# 📧 Spam Email Classifier (ML + NLP Project)
 
-A professional **Spam Email Detection System** built using **Machine Learning & Natural Language Processing (NLP)**.  
-This application classifies emails as **Spam** or **Not Spam** with high accuracy and confidence scoring.
+A **Machine Learning based Spam Email Classification system** that accurately detects whether an email is **Spam** or **Not Spam** using **Natural Language Processing (NLP)** techniques.  
+The model achieves **97.96% accuracy** and provides **confidence scores** for predictions.
 
 ---
 
 ## 🚀 Live Demo
-👉 https://safarwithak-spam-email-detector.streamlit.app/
+🔗 https://safarwithak-spam-email-detector.streamlit.app/
 
 ---
 
-## 🎯 Project Overview
+## 📌 Features
 
-Spam emails are a major cybersecurity and productivity concern.  
-This project uses **TF-IDF vectorization** and a trained **Machine Learning classifier** to accurately detect spam emails.
-
-- ✅ Accuracy: **97.96%**
-- ✅ Real-time prediction
-- ✅ Confidence score (probability)
-- ✅ Dark / Light mode toggle
-- ✅ Deployed on Streamlit Cloud
-
----
-
-## 🧠 Machine Learning Workflow
-
-1. **Data Preprocessing**
-   - Lowercasing text
-   - Tokenization
-   - Stopword removal
-   - Stemming (Porter Stemmer)
-
-2. **Feature Extraction**
-   - TF-IDF Vectorizer
-
-3. **Model Training**
-   - Supervised ML classifier (trained offline)
-   - Saved using Pickle
-
-4. **Prediction**
-   - Spam / Not Spam
-   - Probability-based confidence
+- ✅ Spam / Not Spam detection  
+- 📊 Model confidence (probability score)  
+- 🌙 Dark & Light mode toggle  
+- 📝 Email word count & character count  
+- ⚡ Fast prediction using TF-IDF  
+- 🎯 High accuracy (97.96%)  
+- ☁️ Deployed on Streamlit Cloud  
 
 ---
 
 ## 🛠 Tech Stack
 
 - **Python**
-- **NLTK (Natural Language Toolkit)**
+- **Streamlit**
+- **NLTK**
+- **Scikit-learn**
 - **TF-IDF Vectorizer**
-- **Machine Learning**
-- **Streamlit (Frontend & Deployment)**
+- **Multinomial Naive Bayes**
+- **Pickle**
 
 ---
 
-## 📁 Project Structure
+## 🧠 Machine Learning Workflow
 
+1. Data Cleaning & Preprocessing  
+2. Tokenization & Stopword Removal  
+3. Stemming using Porter Stemmer  
+4. Feature Extraction using TF-IDF  
+5. Model Training (MultinomialNB)  
+6. Model Evaluation & Accuracy Testing  
+7. Deployment with Streamlit  
+
+---
+
+## 📂 Project Structure
+
+```text
 spam-email-classifier/
 │
-├── app.py # Streamlit application
-├── model.pkl # Trained ML model
-├── vectorizer.pkl # TF-IDF vectorizer
-├── requirements.txt # Dependencies
-└── README.md # Project documentation
+├── app.py               # Streamlit application
+├── model.pkl            # Trained ML model
+├── vectorizer.pkl       # TF-IDF vectorizer
+├── requirements.txt     # Dependencies
+├── README.md            # Project documentation
+└── .gitignore
 
+⚙️ Installation & Run Locally
+1️⃣ Clone the repository
+git clone https://github.com/SafarwithAK/spam-email-classifier.git
+cd spam-email-classifier
 
----
-
-## ⚙️ Installation & Run Locally
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/SafarwithAK/spam-email-detection.git
-cd spam-email-detection
-2️⃣ Install Dependencies
+2️⃣ Install dependencies
 pip install -r requirements.txt
-3️⃣ Run the Application
+
+3️⃣ Run the app
 streamlit run app.py
-📦 requirements.txt
-streamlit
-scikit-learn
-nltk
-🖥 Application Features
-✉️ Email text input
 
-🌙 Dark / Light mode toggle
 
-📊 Word & character count
-
-📈 Spam confidence score
-
-🎯 High accuracy ML model
-
-☁️ Cloud deployed (Streamlit)
-
-📊 Model Performance
-Metric	Value
-Accuracy	97.96%
-Precision	High
-Recall	High
-F1-Score	Optimized
 👨‍💻 Developer
+
 Ajit Kumar
-Computer Science Student | Full Stack & ML Enthusiast
 
-GitHub: https://github.com/SafarwithAK
+💼 Computer Science Student
 
-LinkedIn: https://www.linkedin.com/in/ajit-kumar-36729328a/
+🌐 GitHub: https://github.com/SafarwithAK
 
-Email: ajitkumar09112005@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/ajit-kumar-36729328a/
 
-📌 Resume Description (Ready to Use)
-Developed a Machine Learning based Spam Email Classifier using NLP techniques and TF-IDF vectorization, achieving 97.96% accuracy. Built an interactive Streamlit web application with dark/light mode, confidence scoring, and deployed it on Streamlit Cloud.
+📧 Email: ajitkumar09112005@gmail.com
 
-📜 License
-This project is open-source and available for educational purposes.
+📄 Resume Description (Short)
 
-© 2026 Ajit Kumar
+Developed a Machine Learning based Spam Email Classifier using NLP and TF-IDF achieving 97.96% accuracy. Implemented confidence scoring, dark/light UI, and deployed the application on Streamlit Cloud.
 
+⭐ Future Enhancements
 
----
+📩 Gmail API integration
 
-Agar chaho to main:
-- 🔹 **GitHub ke hisaab se aur professional bana du**
-- 🔹 **Image/banner add karwa du**
-- 🔹 **Resume bullet points aur strong bana du**
+🤖 Deep Learning models
 
-Bas bolo 👍
+📈 Confusion Matrix visualization
+
+🌍 Multi-language support
+
+🏁 License
+
+This project is licensed under the MIT License.
+Feel free to use and modify it.
+
