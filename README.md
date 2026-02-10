@@ -1,39 +1,36 @@
-📧 Spam Email Classifier
+<p align="center"> <img src="preview.png" alt="Spam Email Classifier" width="750"> </p> <h1 align="center">📧 Spam Email Classifier</h1> <p align="center"> <b>Machine Learning & NLP based web application to classify emails as Spam or Not Spam</b> </p> <p align="center"> <img src="https://img.shields.io/badge/Accuracy-97.96%25-brightgreen" /> <img src="https://img.shields.io/badge/Python-3.12-blue" /> <img src="https://img.shields.io/badge/Framework-Streamlit-red" /> <img src="https://img.shields.io/badge/ML-TF--IDF%20%7C%20Naive%20Bayes-orange" /> </p>
+🚀 Project Overview
 
-A Machine Learning based Spam Email Detection System that classifies emails as Spam or Not Spam using Natural Language Processing (NLP) techniques.
-The model is trained on labeled email data and deployed with a simple Streamlit web interface for real-time predictions.
+The Spam Email Classifier is a machine learning-powered web application that automatically classifies emails as Spam or Not Spam using Natural Language Processing (NLP) techniques.
 
-🚀 Features
+The model is trained on a labeled email dataset using TF-IDF vectorization and a supervised learning algorithm, achieving an accuracy of 97.96%.
+A clean and interactive Streamlit UI allows users to paste email content and get instant predictions with confidence.
 
-Detects Spam / Ham (Not Spam) emails
+✨ Features
 
-Uses NLP text preprocessing
+📩 Classifies emails as Spam / Not Spam
 
-Trained Machine Learning model
+🧠 NLP preprocessing (tokenization, stopword removal, stemming)
 
-Real-time prediction using Streamlit UI
+📊 Model accuracy: 97.96%
 
-Displays prediction confidence
+📏 Email length & word count analysis
 
-Lightweight and easy to deploy
+🌙 Dark / Light mode toggle
 
-🛠️ Technologies Used
+⚡ Fast and responsive Streamlit UI
 
-Python
+☁️ Deployed on Streamlit Cloud
 
-Scikit-learn
-
-NLTK
-
-Pandas & NumPy
-
-Streamlit
-
-Pickle (Model Serialization)
-
+🛠️ Tech Stack
+Category	Technologies
+Language	Python 3.12
+NLP	NLTK
+ML	TF-IDF Vectorizer, Naive Bayes
+Web UI	Streamlit
+Deployment	Streamlit Cloud
+Version Control	Git & GitHub
 🧠 Machine Learning Workflow
-
-Data Cleaning
 
 Text Preprocessing
 
@@ -41,37 +38,30 @@ Lowercasing
 
 Tokenization
 
-Stopword Removal
+Stopword removal
 
-Stemming
+Stemming (Porter Stemmer)
 
-Feature Extraction (TF-IDF Vectorizer)
+Feature Extraction
+
+TF-IDF Vectorization
 
 Model Training
 
-Model Evaluation
+Supervised classification model
 
-Web App Deployment
-
-📊 Model Performance
+Evaluation
 
 Accuracy: 97.96%
 
-Optimized for high precision in spam detection
+📸 Application Preview
+<p align="center"> <img src="preview.png" width="700"> </p>
+🌐 Live Demo
 
-Reliable classification on unseen emails
+🔗 Streamlit App:
+👉 https://safarwithak-spam-email-detector.streamlit.app/
 
-📂 Project Structure
-spam-email-classifier/
-│
-├── app.py                  # Streamlit web application
-├── model.pkl               # Trained ML model
-├── vectorizer.pkl          # TF-IDF vectorizer
-├── requirements.txt        # Project dependencies
-├── README.md               # Project documentation
-└── dataset/                # Training dataset (optional)
-
-▶️ How to Run Locally
+📦 Installation & Usage
 1️⃣ Clone the Repository
 git clone https://github.com/SafarwithAK/spam-email-detection.git
 cd spam-email-detection
@@ -79,7 +69,7 @@ cd spam-email-detection
 2️⃣ Install Dependencies
 pip install -r requirements.txt
 
-3️⃣ Download NLTK Resources
+3️⃣ Download NLTK Data
 import nltk
 nltk.download('punkt')
 nltk.download('stopwords')
@@ -87,36 +77,37 @@ nltk.download('stopwords')
 4️⃣ Run the Application
 streamlit run app.py
 
-🌐 Live Demo
+📁 Project Structure
+spam-email-detection/
+│
+├── app.py                # Streamlit application
+├── model.pkl             # Trained ML model
+├── vectorizer.pkl        # TF-IDF vectorizer
+├── requirements.txt      # Project dependencies
+├── preview.png           # App screenshot
+└── README.md
 
-👉 Live App:
-https://safarwithak-spam-email-detector.streamlit.app/
+🎯 Resume-Ready Description
 
-📸 Application Preview
-
-Text input for email content
-
-Predict button
-
-Spam / Not Spam result
-
-Confidence score displayed
+Developed a Machine Learning based Spam Email Classifier using NLP and TF-IDF vectorization. Built an interactive Streamlit web application for real-time email classification. Achieved 97.96% accuracy and deployed the model on Streamlit Cloud for public access.
 
 👨‍💻 Author
 
 Ajit Kumar
-Computer Science Student | Full Stack Developer
+Computer Science Engineer | Full Stack Developer | ML Enthusiast
 
-GitHub: SafarwithAK
+🔗 GitHub: https://github.com/SafarwithAK
 
-LinkedIn: Ajit Kumar
+🔗 LinkedIn: https://www.linkedin.com/in/ajit-kumar-36729328a/
 
-Email: ajitkumar09112005@gmail.com
+📧 Email: ajitkumar09112005@gmail.com
 
-⭐ Acknowledgements
+⭐ Support
 
-Scikit-learn Documentation
+If you like this project:
 
-NLTK Library
+⭐ Star the repository
 
-Streamlit Community
+🍴 Fork it
+
+🧠 Suggest improvements
