@@ -1,12 +1,18 @@
 import streamlit as st
 import pickle
 import string
-nltk.download('punkt')
-nltk.download('stopwords')
-
 import nltk
+
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
+
+# ---------------- NLTK DOWNLOAD (SAFE) ----------------
+@st.cache_resource
+def download_nltk():
+    nltk.download('punkt')
+    nltk.download('stopwords')
+
+download_nltk()
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
@@ -105,17 +111,13 @@ input_email = st.text_area(
     placeholder="Example: Congratulations! You have won a free gift card..."
 )
 
-# Email stats
 if input_email.strip():
-    words = len(input_email.split())
-    chars = len(input_email)
     col1, col2 = st.columns(2)
-    col1.metric("📝 Word Count", words)
-    col2.metric("🔤 Character Count", chars)
+    col1.metric("📝 Word Count", len(input_email.split()))
+    col2.metric("🔤 Character Count", len(input_email))
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# Predict button
 if st.button("🔍 Predict Email", use_container_width=True):
     if input_email.strip() == "":
         st.warning("⚠️ Please enter an email first.")
