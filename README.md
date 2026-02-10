@@ -1,4 +1,4 @@
-<p align="center"> <img src="preview.png" alt="Spam Email Classifier" width="750"> </p> <h1 align="center">📧 Spam Email Classifier</h1> <p align="center"> <b>Machine Learning & NLP based web application to classify emails as Spam or Not Spam</b> </p> <p align="center"> <img src="https://img.shields.io/badge/Accuracy-97.96%25-brightgreen" /> <img src="https://img.shields.io/badge/Python-3.12-blue" /> <img src="https://img.shields.io/badge/Framework-Streamlit-red" /> <img src="https://img.shields.io/badge/ML-TF--IDF%20%7C%20Naive%20Bayes-orange" /> </p>
+
 🚀 Project Overview
 
 The Spam Email Classifier is a machine learning-powered web application that automatically classifies emails as Spam or Not Spam using Natural Language Processing (NLP) techniques.
