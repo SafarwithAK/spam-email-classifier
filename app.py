@@ -10,9 +10,11 @@ from nltk.stem.porter import PorterStemmer
 @st.cache_resource
 def download_nltk():
     nltk.download('punkt')
+    nltk.download('punkt_tab')   # 🔥 THIS FIXES YOUR ERROR
     nltk.download('stopwords')
 
 download_nltk()
+
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
@@ -146,3 +148,4 @@ st.markdown("""
     © 2026 | Spam Email Classifier | NLP & ML Project
 </div>
 """, unsafe_allow_html=True)
+
